@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Sozlamalar tugmasi -->
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙️"
+            android:gravity="end"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white" />
+
+        <!-- Natija oynasi -->
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Kiritish oynasi -->
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="0"
+            android:textSize="32sp"
+            android:gravity="end"
+            android:textColor="@color/white"
+            android:inputType="none" />
+
+        <!-- Tugmalar grid -->
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true"
+            android:layout_marginTop="16dp">
+
+            <!-- Tugmalar — xohlagancha qo‘shishingiz mumkin -->
+            <!-- Namuna tugmalar: -->
+
+            <Button android:id="@+id/btn_mc" android:text="MC" style="@style/CalcButton" android:textAlignment="center" />
+            <Button android:id="@+id/btn_mr" android:text="MR" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_mplus" android:text="M+" style="@style/CalcButton" android:textAlignment="center" />
+            <Button android:id="@+id/btn_mminus" android:text="M-" style="@style/CalcButton" android:textAlignment="center" />
+
+            <Button android:id="@+id/btn_clear" android:text="C" style="@style/CalcButton" android:textAlignment="center" />
+            <Button android:id="@+id/btn_divide" android:text="/" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_multiply" android:text="X" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_delete" android:text="⌫" style="@style/CalcButton" android:textAlignment="center" />
+
+            <Button android:id="@+id/btn_7" android:text="7" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_8" android:text="8" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_9" android:text="9" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_subtract" android:text="-" style="@style/CalcButton" android:textAlignment="center"/>
+
+            <Button android:id="@+id/btn_4" android:text="4" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_5" android:text="5" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_6" android:text="6" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_add" android:text="+" style="@style/CalcButton" android:textAlignment="center"/>
+
+            <Button android:id="@+id/btn_1" android:text="1" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_2" android:text="2" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_3" android:text="3" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_kvadrat" android:text="x²" style="@style/CalcButton" android:textAlignment="center"/>
+
+            <Button android:id="@+id/btn_0" android:text="0" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_qavs1" android:text="(" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_qavs2" android:text=")" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_kub" android:text="x³" style="@style/CalcButton" android:textAlignment="center"/>
+
+            <!-- Ilmiy tugmalar -->
+            <Button android:id="@+id/btn_sin" android:text="sin" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_cos" android:text="cos" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_tan" android:text="tan" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_sqrt" android:text="√x" style="@style/CalcButton" android:textAlignment="center"/>
+
+            <Button android:id="@+id/btn_ln" android:text="ln" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_log" android:text="log" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_power" android:text="^" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_factorial" android:text="!" style="@style/CalcButton" android:textAlignment="center"/>
+
+            <Button android:id="@+id/btn_exp" android:text="e" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_Rad" android:text="Rad" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_foiz" android:text="%" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_pi" android:text="π" style="@style/CalcButton" android:textAlignment="center"/>
+
+            <Button android:id="@+id/btn_kasr" android:text="1/x" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_integral" android:text="∫" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_determenant" android:text="det(A)" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_yaxlitlash" android:text="rnd(x)" style="@style/CalcButton" android:textAlignment="center"/>
+
+            <Button android:id="@+id/btn_skalyar_kopaytma" android:text="dt(x,y)" style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_dot" android:text="." style="@style/CalcButton" android:textAlignment="center"/>
+            <Button android:id="@+id/btn_equals" android:text="=" style="@style/CalcButton" android:textAlignment="center"/>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
